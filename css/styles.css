@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Jost", sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+}
+
+/* Gallery */
+.gallery {
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+.item__header {
+    text-align: center;
+}
+
+.gallery__row {
+    row-gap: 30px;
+    padding: 20px;
+}
+
+.gallery__row .gallery__col img {
+    display: flex;
+    width: 100%;
+}
+
+.gallery__col a:hover img {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.gallery__col a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery__shasow {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    right: 0px;
+}
+
+.gallery__col:hover .gallery__shasow {
+    background-color: rgba(0, 0, 0, 0.53);
+    transition: all 1s;
+}
+
+.gallery__overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transform: translateY(60px);
+    color: white;
+}
+
+.gallery__col:hover .gallery__overlay {
+    transform: translateY(0px);
+    transition: all 1s;
+
+    opacity: 1;
+}
+
+.gallery__overlay h3 {
+    font-weight: 700;
+}
+
+/* Gallery Bottom */
+.gallery__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    margin: 20px 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.gallery__bottom img {
+    width: 15%;
+}
+
+/* FEEDBACK */
+.feedback {
+    padding: 50px;
+}
+
+.feedback__content {
+    padding: 50px;
+}
+
+.feedback__item > p {
+    text-align: center;
+}
+
+.feedback__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.feedback__img {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.feedback__img img {
+    width: 100%;
+}
+
+.feedback__text {
+    padding-left: 20px;
+}
+
+.feedback__text span:first-of-type {
+    color: #322760;
+    font-weight: 700;
+}
+
+.feedback__text span:last-of-type {
+    color: gray;
+}
+
+#feedback .feedback__content .owl-dot.active span {
+    background-color: #322760;
+    width: 15px;
+    height: 15px;
+}
+
+#feedback .feedback__content .owl-dot:hover span {
+    background-color: #322760;
+    width: 13px;
+    height: 13px;
+}
+
+#feedback .feedback__content .owl-dot {
+    margin: 40px 0;
+}
