@@ -149,14 +149,14 @@ header.nav-fixed {
     border: none;
 }
 .dark header.nav-fixed {
-    background-color: black;
+    background-color: #151421;
     transition: 1s;
 }
 .dark#mybody {
     background-color: black;
 }
 .dark .shape path {
-    fill: black;
+    fill: #151421;
 }
 .dark .nav-fixed .navbar-brand {
     color: white;
@@ -166,17 +166,17 @@ header.nav-fixed {
     color: rgb(255, 255, 255, 0.7);
 }
 .dark header#site-header.fixed-header.main-header.nav-fixed {
-    background-color: #000000;
+    background-color: #151421;
 }
 .dark .dropdown-menu{
-    background-color: #000000;
+    background-color: #151421;
 
 }
 .dark .dropdown-menu .dropdown-item{
     color: white;
 }
 .dark footer{
-    background-color: #000000 !important;
+    background-color: #151421 !important;
 }
 .bg-body-tertiary{
     background-color: rgb(251, 251, 251);
@@ -297,7 +297,6 @@ header#site-header.fixed-header.main-header.nav-fixed {
 /* ABOUT US */
 .about{
     padding-top: 20px
-
 }
 .about__left p:first-of-type{
     font-size: 14px;
@@ -351,7 +350,9 @@ header#site-header.fixed-header.main-header.nav-fixed {
 .dark .about__left h2, .dark .about__left ul li span{
     color: #fff;
 }
-
+.dark .about{
+    background: #151421;
+}
 
 
 /* Challenge */
@@ -464,16 +465,14 @@ header#site-header.fixed-header.main-header.nav-fixed {
     box-shadow: 1px 1px 5px 0 rgba(1, 1, 1, 0.1);
     transition: .5s;
 }
-.service__content .service__item--info a:hover{
-    color: #009f4d;
-}
+
 .service__content .service__item--info p{
     margin: 0;
     padding: 0;
     font-size: 17px;
     line-height: 27px;
     color: #666;
-    opacity: .8;
+    opacity: .9;
 }
 .service__item .service__btn{
     padding: 10px 35px;
@@ -486,9 +485,26 @@ header#site-header.fixed-header.main-header.nav-fixed {
 .service__item .service__btn:hover{
     color: #009f4d;
 }
-
-
-
+.dark .service__title{
+    color: #fff;
+}
+.dark .service__content .service__item--info a{
+    background: #000000;
+    color: #fff;
+}
+.dark .service__content .service__item--info p{
+    color: #fff;
+    opacity: 0.7;
+}
+.dark .service__btn{
+    color: #fff;
+}
+.dark .service{
+    background: #151421;
+}
+.service__content .service__item--info a:hover{
+    color: #009f4d;
+}
 
 
 
