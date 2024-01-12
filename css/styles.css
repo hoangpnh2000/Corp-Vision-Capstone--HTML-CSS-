@@ -162,6 +162,7 @@ header.nav-fixed {
 }
 .dark#mybody {
     background-color: black;
+
 }
 .dark .shape path {
     fill: #151421;
@@ -190,7 +191,8 @@ header.nav-fixed {
     transition: 1s;
 }
 
-.navbar-toggler .fa-bars {
+button.navbar-toggler .fa-bars {
+
     display: block;
     background: #00a63f;
     color: #fff;
@@ -198,13 +200,29 @@ header.nav-fixed {
     width: 34px;
     height: 34px;
     line-height: 35px;
+    border-radius: 5px;
+    transition: all 1s;
 }
-.navbar-toggler .fa-circle-xmark {
+button.navbar-toggler.collapse .fa-bars{
     display: none;
 }
-.navbar-toggler .fa-bars:hover .fa-bars {
+button.navbar-toggler .fa-circle-xmark{
+    display: block;
+    background: #00a63f;
+    color: #fff;
+    font-size: 20px;
+    width: 34px;
+    height: 34px;
+    line-height: 35px;
+    position: absolute;
+    top: 28px;
+    border-radius: 5px;
+}
+button.navbar-toggler.collapsed .fa-circle-xmark{
     display: none;
 }
+
+
 header#site-header.fixed-header.main-header.nav-fixed {
     background-color: #fff;
 }
@@ -355,6 +373,7 @@ header#site-header.fixed-header.main-header.nav-fixed {
 }
 .dark .about {
     background: #151421;
+    transition: 1s;
 }
 
 /* Challenge */
@@ -502,6 +521,7 @@ header#site-header.fixed-header.main-header.nav-fixed {
 }
 .dark .service {
     background: #151421;
+    transition: 1s;
 }
 .service__content .service__item--info a:hover {
     color: #009f4d;
