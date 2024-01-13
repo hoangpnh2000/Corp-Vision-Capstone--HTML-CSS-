@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+a{
+    text-decoration: none;
+}
 html,
 body {
     font-family: "Jost", sans-serif;
@@ -540,6 +542,9 @@ header#site-header.fixed-header.main-header.nav-fixed {
 .dark .gallery__top h2 {
     color: #fff;
 }
+.dark .gallery__header p{
+    color: #7e7d7d;
+}
 .item__header {
     text-align: center;
 }
@@ -726,11 +731,30 @@ header#site-header.fixed-header.main-header.nav-fixed {
     left: 83.5%;
     border-color: #c21292;
 }
-
+.dark .achievement {
+    background-color: #151421;
+    transition: 1s;
+}
+.dark .subheader__style{
+    color: #7e7d7d;
+}
+.dark .header__style{
+    color: #fff;
+}
+.dark .ach__number1,.dark .ach__number2,.dark .ach__number3,.dark .ach__number4{
+    color: #fff;
+}
+.dark .progress {
+    background-color: black;
+}
 /* FEEDBACK */
 .feedback {
     padding: 50px;
     background-color: #f8f9fa;
+    transition: 1s;
+}
+.dark .feedback{
+    background-color: black;
 }
 
 .dark .feedback__header h2 {
@@ -795,6 +819,12 @@ header#site-header.fixed-header.main-header.nav-fixed {
 #feedback .feedback__content .owl-dot {
     margin: 40px 0;
 }
+.dark .feedback__header p {
+    color: #7e7d7d;
+}
+.dark .feedback__item p{
+    color: #c2c2c2;
+}
 
 /* News */
 .news {
@@ -826,7 +856,13 @@ header#site-header.fixed-header.main-header.nav-fixed {
 .news .card-footer a:last-of-type:hover {
     color: #00a63f;
 }
-
+.dark .news{
+    background-color: #151421;
+}
+.dark .card {
+    background-color: #151421;
+    border: 1px solid #817f7f;
+}
 /* Footer */
 footer {
     background-color: #000000;
