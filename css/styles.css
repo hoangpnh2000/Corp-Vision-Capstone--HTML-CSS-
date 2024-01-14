@@ -38,7 +38,7 @@ body {
     z-index: 10;
 }
 
-/* .header__style {
+.header__style {
     color: #3f3a64;
     font-weight: 700;
 }
@@ -46,7 +46,7 @@ body {
 .subheader__style {
     color: #7e7d7d;
     font-weight: 400;
-} */
+}
 
 .fixed-header.main-header {
     position: fixed;
