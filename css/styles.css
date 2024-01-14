@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-a {
+#mybody a {
     text-decoration: none;
 }
 html,
@@ -219,9 +219,7 @@ button.navbar-toggler .fa-bars {
     border-radius: 5px;
     transition: all 1s;
 }
-button.navbar-toggler.collapse .fa-bars {
-    display: none;
-}
+
 button.navbar-toggler .fa-circle-xmark {
     display: block;
     background: #00a63f;
@@ -236,6 +234,9 @@ button.navbar-toggler .fa-circle-xmark {
 }
 button.navbar-toggler.collapsed .fa-circle-xmark {
     display: none;
+}
+button.navbar-toggler.collapse .fa-bars {
+    display: block;
 }
 
 header#site-header.fixed-header.main-header.nav-fixed {
@@ -1025,17 +1026,32 @@ footer .copyright span:last-of-type {
     background: #213364;
 }
 
-/* .row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-} */
+@media screen and (max-width: 1140px) {
+    .carousel-control .carousel-control-prev,
+    .carousel-control .carousel-control-next{
+        top: 85%;
+        left: 90%;
+    }
+    .carousel-control .carousel-control-prev{
+        left: 85%;
+    }
+
+}
 @media screen and (max-width: 992px) {
     .container {
         width: 100%;
     }
-
+    .carousel-title h2{
+        font-size: 55px;
+    }
+    .carousel-control .carousel-control-prev,
+    .carousel-control .carousel-control-next{
+        top: 85%;
+        left: 87%;
+    }
+    .carousel-control .carousel-control-prev{
+        left: 80%;
+    }
     header.main-header {
         padding: 15px 0;
         height: auto;
