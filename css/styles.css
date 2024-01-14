@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-a{
+a {
     text-decoration: none;
 }
 html,
@@ -164,7 +164,6 @@ header.nav-fixed {
 }
 .dark#mybody {
     background-color: black;
-
 }
 .dark .shape path {
     fill: #151421;
@@ -194,7 +193,6 @@ header.nav-fixed {
 }
 
 button.navbar-toggler .fa-bars {
-
     display: block;
     background: #00a63f;
     color: #fff;
@@ -205,10 +203,10 @@ button.navbar-toggler .fa-bars {
     border-radius: 5px;
     transition: all 1s;
 }
-button.navbar-toggler.collapse .fa-bars{
+button.navbar-toggler.collapse .fa-bars {
     display: none;
 }
-button.navbar-toggler .fa-circle-xmark{
+button.navbar-toggler .fa-circle-xmark {
     display: block;
     background: #00a63f;
     color: #fff;
@@ -220,10 +218,9 @@ button.navbar-toggler .fa-circle-xmark{
     top: 28px;
     border-radius: 5px;
 }
-button.navbar-toggler.collapsed .fa-circle-xmark{
+button.navbar-toggler.collapsed .fa-circle-xmark {
     display: none;
 }
-
 
 header#site-header.fixed-header.main-header.nav-fixed {
     background-color: #fff;
@@ -542,7 +539,7 @@ header#site-header.fixed-header.main-header.nav-fixed {
 .dark .gallery__top h2 {
     color: #fff;
 }
-.dark .gallery__header p{
+.dark .gallery__header p {
     color: #7e7d7d;
 }
 .item__header {
@@ -735,13 +732,16 @@ header#site-header.fixed-header.main-header.nav-fixed {
     background-color: #151421;
     transition: 1s;
 }
-.dark .subheader__style{
+.dark .subheader__style {
     color: #7e7d7d;
 }
-.dark .header__style{
+.dark .header__style {
     color: #fff;
 }
-.dark .ach__number1,.dark .ach__number2,.dark .ach__number3,.dark .ach__number4{
+.dark .ach__number1,
+.dark .ach__number2,
+.dark .ach__number3,
+.dark .ach__number4 {
     color: #fff;
 }
 .dark .progress {
@@ -753,7 +753,7 @@ header#site-header.fixed-header.main-header.nav-fixed {
     background-color: #f8f9fa;
     transition: 1s;
 }
-.dark .feedback{
+.dark .feedback {
     background-color: black;
 }
 
@@ -822,7 +822,7 @@ header#site-header.fixed-header.main-header.nav-fixed {
 .dark .feedback__header p {
     color: #7e7d7d;
 }
-.dark .feedback__item p{
+.dark .feedback__item p {
     color: #c2c2c2;
 }
 
@@ -856,7 +856,7 @@ header#site-header.fixed-header.main-header.nav-fixed {
 .news .card-footer a:last-of-type:hover {
     color: #00a63f;
 }
-.dark .news{
+.dark .news {
     background-color: #151421;
 }
 .dark .card {
@@ -1046,4 +1046,23 @@ footer .copyright span:last-of-type {
         color: #3f3a64;
         font-size: 32px;
     }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #008030;
+    color: white;
+    line-height: 60px;
+    text-align: center;
+    opacity: 0;
+}
+
+.cd-top--is-visible {
+    opacity: 1;
 }
